@@ -1,5 +1,12 @@
 import type { Config } from "tailwindcss";
 
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +15,8 @@ const config: Config = {
     "./animation/**/*.{js,ts,jsx,tsx,mdx}",
     "./public/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
+
   theme: {
     container: {
       center: true,
@@ -52,7 +61,7 @@ const config: Config = {
     },
     fontSize: {
       sm: "clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem)",
-      base: "clamp(1rem, 0.34vw + 0.91rem, 1.19rem)",
+      base: "clamp(1rem, 0.34vw + 0.91rem, 1.125rem)",
       lg: "clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem)",
       label: "clamp(1.56rem, 1vw + 1.31rem, 2.11rem)",
       subtitle: "clamp(1rem, 1.56vw + 1.56rem, 1.25rem)",
@@ -72,6 +81,16 @@ const config: Config = {
     margin: {},
     borderRadius: {},
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
 export default config;

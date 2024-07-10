@@ -1,18 +1,18 @@
+import { Container, Heading, Section, SubTitle } from "@/components";
 import Image from "next/image";
 import React from "react";
 
 export const Blog = () => {
   return (
-    <section className="py-24 sm:py-48 bg-secondary-950">
-      <div className="container">
-        <div className="flex text-white items-center gap-2 border-b border-neutral-100 pb-4 mb-12 sm:mb-14">
-          <span className="w-2 h-2 rounded-full bg-primary-300 block" />
-          <span>Blog</span>
-        </div>
+    <Section className="bg-secondary-950">
+      <Container>
+        <SubTitle subTitle="Blog" />
 
         <div>
           <div className="flex justify-between items-center w-full">
-            <h2 className="text-section leading-none text-white">Blog</h2>
+            <Heading as="h2" className="text-section leading-none text-white">
+              Blog
+            </Heading>
             <button className="border px-6 py-3 rounded-full text-white">
               See all
             </button>
@@ -177,7 +177,7 @@ export const Blog = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };

@@ -18,9 +18,9 @@ export default function Home() {
       </div>
       <AboutUs />
       <Metrics />
-      <div className="sm:p-4 p-2">
+      {/* <div className="sm:p-4 p-2">
         <Testimonials />
-      </div>
+      </div> */}
       <Experts />
       <div className="sm:p-4 p-2 bg-secondary-950">
         <NewsLetter />

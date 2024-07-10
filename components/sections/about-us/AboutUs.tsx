@@ -1,20 +1,17 @@
-import { Check } from "@/components";
+import { Check, Container, Heading, Section, SubTitle } from "@/components";
 import React from "react";
 import AboutUsCarousel from "./AboutUsCarousel";
 
 export const AboutUs = () => {
   return (
-    <section className="py-24 sm:py-48 bg-secondary-950">
-      <div className="container">
-        <div className="flex text-white items-center gap-2 border-b border-neutral-100 pb-4 mb-12 sm:mb-14">
-          <span className="w-2 h-2 rounded-full bg-primary-300 block" />
-          <span>About Us</span>
-        </div>
+    <Section className="bg-secondary-950">
+      <Container>
+        <SubTitle subTitle="About us" />
         <div className="grid xl:grid-cols-2 gap-12 md:gap-36">
           <div className="flex flex-col gap-6">
-            <h2 className="text-section leading-none text-white">
+            <Heading as="h2" className="text-section leading-none text-white">
               Committed to a sustainable future
-            </h2>
+            </Heading>
             <p className="text-white/80">
               As a pioneering force in the green energy sector, we've been at
               the forefront of the transition to clean, renewable power sources.
@@ -46,7 +43,7 @@ export const AboutUs = () => {
             <AboutUsCarousel />
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };

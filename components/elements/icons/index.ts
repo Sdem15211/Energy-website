@@ -4,3 +4,7 @@ export * from "./Ev";
 export * from "./Check";
 export * from "./Renewable";
 export * from "./Linkedin";
+export * from "./LinkedInFooter";
+export * from "./Facebook";
+export * from "./Instagram";
+export * from "./FooterBg";

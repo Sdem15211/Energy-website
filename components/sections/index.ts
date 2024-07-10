@@ -4,3 +4,4 @@ export * from "./about-us";
 export * from "./metrics";
 export * from "./experts";
 export * from "./news-letter";
+export * from "./blog";

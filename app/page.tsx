@@ -1,5 +1,6 @@
 import {
   AboutUs,
+  Blog,
   Experts,
   Features,
   Hero,
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="p-4 bg-secondary-950">
         <NewsLetter />
       </div>
+      <Blog />
     </main>
   );
 }

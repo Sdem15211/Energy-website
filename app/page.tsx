@@ -1,4 +1,11 @@
-import { AboutUs, Experts, Features, Hero, Metrics } from "@/components";
+import {
+  AboutUs,
+  Experts,
+  Features,
+  Hero,
+  Metrics,
+  NewsLetter,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -10,6 +17,9 @@ export default function Home() {
       <AboutUs />
       <Metrics />
       <Experts />
+      <div className="p-4 bg-secondary-950">
+        <NewsLetter />
+      </div>
     </main>
   );
 }

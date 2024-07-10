@@ -1,4 +1,4 @@
-import { AboutUs, Features, Hero, Metrics } from "@/components";
+import { AboutUs, Experts, Features, Hero, Metrics } from "@/components";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       </div>
       <AboutUs />
       <Metrics />
+      <Experts />
     </main>
   );
 }

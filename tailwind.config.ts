@@ -79,7 +79,7 @@ const config: Config = {
       label: "clamp(1.56rem, 1vw + 1.31rem, 2.11rem)",
       subtitle: "clamp(1rem, 1.56vw + 1.56rem, 1.5rem)",
       title: "clamp(2.44rem, 2.38vw + 1.85rem, 2.8rem)",
-      features: "clamp(3.05rem, 3.54vw + 2.17rem, 5rem)",
+      features: "clamp(3.05rem, 3.54vw + 2.17rem, 4rem)",
       section: "clamp(3rem, 5.18vw + 2.52rem, 3.875rem)",
       hero: "clamp(4.77rem, 7.48vw + 2.9rem, 6rem)",
     },

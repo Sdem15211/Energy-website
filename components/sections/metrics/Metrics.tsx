@@ -1,19 +1,19 @@
-import { Renewable } from "@/components";
+import { Container, Heading, Renewable, Section, SubTitle } from "@/components";
 import React from "react";
 
 export const Metrics = () => {
   return (
-    <section className="py-24 sm:py-48 bg-beige">
-      <div className="container">
-        <div className="flex items-center gap-2 border-b border-neutral-100 pb-4 mb-12 sm:mb-14">
-          <span className="w-2 h-2 rounded-full bg-primary-300 block" />
-          <span>Our results</span>
-        </div>
+    <Section className="bg-beige">
+      <Container>
+        <SubTitle subTitle="Our results" className="text-secondary-950" />
         <div>
           <div className="mb-12 sm:mb-24">
-            <h2 className="text-section leading-[68px] max-w-xl tracking-tight">
+            <Heading
+              as="h2"
+              className="text-section leading-[68px] max-w-xl tracking-tight"
+            >
               We are committed to a sustainable future
-            </h2>
+            </Heading>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="flex flex-col gap-6 items-start p-10 bg-primary-300 rounded-3xl">
@@ -59,7 +59,7 @@ export const Metrics = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };

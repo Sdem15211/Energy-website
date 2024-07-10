@@ -1,22 +1,18 @@
-import { Linkedin } from "@/components";
+import { Container, Heading, Linkedin, Section, SubTitle } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 export const Experts = () => {
   return (
-    <section className="py-24 sm:py-48 bg-secondary-950">
-      <div className="container">
-        <div className="flex text-white items-center gap-2 border-b border-neutral-300 pb-4 mb-12 sm:mb-14">
-          <span className="w-2 h-2 rounded-full bg-primary-300 block" />
-          <span>Our experts</span>
-        </div>
-
+    <Section className="bg-secondary-950">
+      <Container>
+        <SubTitle subTitle="Our experts" />
         <div>
           <div className="flex flex-col gap-4">
-            <h2 className="text-section leading-none text-white">
+            <Heading as="h2" className="text-section leading-none text-white">
               Meet our experts
-            </h2>
+            </Heading>
             <p className="text-neutral-400">
               Our team boasts top green energy experts, driving innovation in
               sustainability.
@@ -126,7 +122,7 @@ export const Experts = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };

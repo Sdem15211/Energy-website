@@ -1,18 +1,17 @@
-import { Ev } from "@/components";
+import { Container, Ev, Heading, Section, SubTitle } from "@/components";
 import React from "react";
 
 export const Features = () => {
   return (
-    <section className="py-24 sm:py-48 bg-beige rounded-3xl">
-      <div className="container">
-        <div className="flex items-center gap-2 border-b border-neutral-100 pb-4 mb-12 sm:mb-14">
-          <span className="w-2 h-2 rounded-full bg-primary-300 block" />
-          <span>Solutions</span>
-        </div>
+    <Section className="bg-beige rounded-3xl">
+      <Container>
+        <SubTitle subTitle="Solutions" className="text-secondary-950" />
 
         <div>
           <div className="mb-12 sm:mb-24">
-            <h2 className="text-section leading-none">Key to clean future</h2>
+            <Heading as="h2" className="text-section leading-none">
+              Key to clean future
+            </Heading>
           </div>
           <div className="grid md:grid-cols-2 gap-8 xl:grid-cols-4">
             <div className="flex flex-col gap-6 items-start">
@@ -65,7 +64,7 @@ export const Features = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };

@@ -12,7 +12,7 @@ export const AboutUs = () => {
         </div>
         <div className="grid xl:grid-cols-2 gap-12 md:gap-36">
           <div className="flex flex-col gap-6">
-            <h2 className="text-features leading-none text-white">
+            <h2 className="text-section leading-none text-white">
               Committed to a sustainable future
             </h2>
             <p className="text-white/80">

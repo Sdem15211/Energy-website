@@ -3,7 +3,7 @@ import React from "react";
 
 export const Features = () => {
   return (
-    <section className="py-24 sm:py-48 bg-[#FFF7ED] rounded-3xl">
+    <section className="py-24 sm:py-48 bg-beige rounded-3xl">
       <div className="container">
         <div className="flex items-center gap-2 border-b border-neutral-100 pb-4 mb-12 sm:mb-14">
           <span className="w-2 h-2 rounded-full bg-primary-300 block" />

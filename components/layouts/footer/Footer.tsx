@@ -62,27 +62,27 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className="col-span-3 grid gap-4 sm:col-end-10">
-                <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
+                <div className="flex items-center sm:gap-3 gap-10 p-1 bg-white/25 rounded-full">
+                  <span className="bg-primary-300 p-1 flex items-center justify-center rounded-full">
                     <Facebook />
                   </span>
-                  <p className="text-white font-medium">
+                  <p className="text-white text-sm font-medium">
                     Follow us on Facebook
                   </p>
                 </div>
-                <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
+                <div className="flex items-center sm:gap-3 gap-10 p-1 bg-white/25 rounded-full">
+                  <span className="bg-primary-300 p-1 flex items-center justify-center rounded-full">
                     <Instagram />
                   </span>
                   <p className="text-white text-sm font-medium">
                     Follow us on Instagram
                   </p>
                 </div>
-                <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
+                <div className="flex items-center sm:gap-3 gap-10 p-1 bg-white/25 rounded-full">
+                  <span className="bg-primary-300 p-1 flex items-center justify-center rounded-full">
                     <LinkedInFooter />
                   </span>
-                  <p className="text-white font-medium">
+                  <p className="text-white text-sm font-medium">
                     Follow us on Linkedln
                   </p>
                 </div>

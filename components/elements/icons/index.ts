@@ -8,3 +8,6 @@ export * from "./LinkedInFooter";
 export * from "./Facebook";
 export * from "./Instagram";
 export * from "./FooterBg";
+export * from "./Location";
+export * from "./ArrowUp";
+export * from "./Clock";

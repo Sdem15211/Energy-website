@@ -4,9 +4,11 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import cx from "classnames";
 import { useWindScreenowSize } from "@/hooks/useWindowSize";
+import useDetectScroll from "@smakss/react-scroll-direction";
 import headerData from "@/data/Header.json";
 
 export const Header = () => {
+  const { scrollDir } = useDetectScroll();
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
@@ -20,7 +22,12 @@ export const Header = () => {
     }
   }, [size.width]);
   return (
-    <header className="border-b sm:border-none border-white fixed bg-secondary-950 sm:bg-transparent w-full py-6 z-50">
+    <header
+      className={cx(
+        "border-b sm:border-b border-primary-300 fixed bg-secondary-950 w-full py-6 z-50 duration-300",
+        scrollDir === "down" ? "-translate-y-full" : "translate-y-0"
+      )}
+    >
       <div className="container flex justify-between">
         <div className="flex items-center gap-10">
           <Link href="/" className="z-10">

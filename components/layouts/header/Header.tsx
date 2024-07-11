@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <header
       className={cx(
-        "border-b sm:border-b border-primary-300 fixed bg-secondary-950 w-full py-6 z-50 duration-300",
+        "border-b sm:border-b border-primary-300 fixed bg-secondary-950 w-full py-4 z-50 duration-300",
         scrollDir === "down" ? "-translate-y-full" : "translate-y-0"
       )}
     >

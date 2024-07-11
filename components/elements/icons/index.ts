@@ -11,3 +11,5 @@ export * from "./FooterBg";
 export * from "./Location";
 export * from "./ArrowUp";
 export * from "./Clock";
+export * from "./SaveEnergy";
+export * from "./Plan";

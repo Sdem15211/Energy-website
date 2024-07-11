@@ -13,7 +13,7 @@ const CareersPage = () => {
   return (
     <Section className="bg-secondary-950">
       <Container>
-        <div className="pt-10 sm:pt-0">
+        <div className="mt-10 sm:mt-0">
           <Heading as="h1" className="text-hero leading-none text-white">
             Join our team
           </Heading>

@@ -1,4 +1,4 @@
-import { Button } from "@/components";
+import { Button, Heading } from "@/components";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Image from "next/image";
 import React from "react";
@@ -7,10 +7,13 @@ export const Hero = () => {
   return (
     <section className="bg-secondary-950 h-screen py-48 flex overflow-hidden">
       <div className="z-10 container flex flex-col gap-10 items-center justify-center w-full h-full">
-        <div className="text-center max-w-[642px] flex flex-col gap-8 pt-20 sm:pt-0">
-          <h1 className="text-hero text-white tracking-tighter sm:leading-[90px] leading-[70px]">
+        <div className="text-center max-w-[642px] flex flex-col gap-8 mt-20 sm:mt-0">
+          <Heading
+            as="h1"
+            className="text-hero text-white tracking-tighter sm:leading-[90px] leading-[70px]"
+          >
             The Future of Green Energy
-          </h1>
+          </Heading>
           <p className="text-white font-light text-base">
             Our commitment to green energy is paving the way for a cleaner,
             healthier planet. Join us on a journey towards a future where clean,

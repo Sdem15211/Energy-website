@@ -1,3 +1,4 @@
+import { Button } from "@/components";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Image from "next/image";
 import React from "react";
@@ -16,9 +17,7 @@ export const Hero = () => {
             renewable energy sources transform the way we power our lives.
           </p>
         </div>
-        <button className="py-3 px-5 bg-primary-300 text-secondary-950 hover:bg-primary-400 duration-300 rounded-full text-base font-medium">
-          See our solutions
-        </button>
+        <Button variant={"secondary"}>See our solutions</Button>
       </div>
       <div className="absolute inset-0 overflow-hidden">
         <div className="w-[1500px] h-[800px] absolute top-0 -left-[20%]">

@@ -1,4 +1,4 @@
-import { Container, Heading, Section, SubTitle } from "@/components";
+import { Button, Container, Heading, Section, SubTitle } from "@/components";
 import Image from "next/image";
 import React from "react";
 
@@ -13,9 +13,7 @@ export const Blog = () => {
             <Heading as="h2" className="text-section leading-none text-white">
               Blog
             </Heading>
-            <button className="border px-6 py-3 rounded-full text-white">
-              See all
-            </button>
+            <Button variant={"tertiary-reversed"}>See all</Button>
           </div>
 
           <div className="grid mt-12 sm:mt-24 md:grid-cols-2 grid-cols-1 gap-8">

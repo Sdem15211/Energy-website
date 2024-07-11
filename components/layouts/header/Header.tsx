@@ -1,5 +1,5 @@
 "use client";
-import { Logo, Menu } from "@/components";
+import { Button, Logo, Menu } from "@/components";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import cx from "classnames";
@@ -42,15 +42,10 @@ export const Header = () => {
           </nav>
         </div>
         <div className="flex gap-4 z-10">
-          <button
-            onClick={toggleMenu}
-            className="sm:hidden p-3 flex justify-center items-center border rounded-full text-white"
-          >
+          <Button onClick={toggleMenu} variant={"tertiary-reversed"}>
             <Menu />
-          </button>
-          <button className="py-3 px-5 bg-primary-300 text-secondary-950 hover:bg-primary-400 duration-300 rounded-full text-base font-medium">
-            Get in touch
-          </button>
+          </Button>
+          <Button variant={"secondary"}>Get in touch</Button>
         </div>
       </div>
     </header>

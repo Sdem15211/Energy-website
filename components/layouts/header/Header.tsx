@@ -49,7 +49,11 @@ export const Header = () => {
           </nav>
         </div>
         <div className="flex gap-4 z-10">
-          <Button onClick={toggleMenu} variant={"tertiary-reversed"}>
+          <Button
+            onClick={toggleMenu}
+            variant={"tertiary-reversed"}
+            className={size.width > 768 ? "opacity-0" : "opacity-100"}
+          >
             <Menu />
           </Button>
           <Button variant={"secondary"}>Get in touch</Button>

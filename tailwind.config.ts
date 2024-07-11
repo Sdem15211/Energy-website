@@ -74,7 +74,7 @@ const config: Config = {
       beige: "#FFF7ED",
     },
     fontSize: {
-      sm: "clamp(0.90rem, 0.17vw + 0.76rem, 0.89rem)",
+      sm: "clamp(0.7rem, 0.17vw + 0.76rem, 0.875rem)",
       base: "clamp(0.875rem, 0.34vw + 0.91rem, 1.125rem)",
       lg: "clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem)",
       label: "clamp(1rem, 1vw + 1.31rem, 1.2rem)",

@@ -1,19 +1,19 @@
 {
   "header": [
     {
-      "label": "about us",
+      "label": "About us",
       "href": "/about-us"
     },
     {
-      "label": "blog",
+      "label": "Blog",
       "href": "/blog"
     },
     {
-      "label": "careers",
+      "label": "Careers",
       "href": "/careers"
     },
     {
-      "label": "pricing",
+      "label": "Pricing",
       "href": "/pricing"
     }
   ]

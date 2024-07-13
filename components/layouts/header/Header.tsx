@@ -6,8 +6,11 @@ import cx from "classnames";
 import { useWindScreenowSize } from "@/hooks/useWindowSize";
 import useDetectScroll from "@smakss/react-scroll-direction";
 import headerData from "@/data/Header.json";
+import { usePathname } from "next/navigation";
 
 export const Header = () => {
+  const pathname = usePathname();
+  const isSanityStudio = pathname.startsWith("/editor");
   const { scrollDir } = useDetectScroll();
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
@@ -24,8 +27,9 @@ export const Header = () => {
   return (
     <header
       className={cx(
-        "border-b sm:border-b border-primary-300 fixed bg-secondary-950 w-full py-4 z-50 duration-300",
-        scrollDir === "down" ? "-translate-y-full" : "translate-y-0"
+        "border-b sm:border-b border-primary-300 fixed bg-secondary-950 w-full py-4 duration-300",
+        scrollDir === "down" ? "-translate-y-full" : "translate-y-0",
+        isSanityStudio ? "z-0" : "z-50"
       )}
     >
       <div className="container flex justify-between">
@@ -49,13 +53,12 @@ export const Header = () => {
           </nav>
         </div>
         <div className="flex gap-4 z-10">
-          <Button
-            onClick={toggleMenu}
-            variant={"tertiary-reversed"}
-            className={size.width > 768 ? "opacity-0" : "opacity-100"}
-          >
-            <Menu />
-          </Button>
+          {size.width < 768 && (
+            <Button onClick={toggleMenu} variant={"tertiary-reversed"}>
+              <Menu />
+            </Button>
+          )}
+
           <Button variant={"secondary"}>Get in touch</Button>
         </div>
       </div>

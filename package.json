@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.50.0",
     "@smakss/react-scroll-direction": "^4.1.0",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.14",
     "next": "14.2.4",
+    "next-sanity": "^9.4.2",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.5",
     "react-responsive-carousel": "^3.2.23",
+    "sanity": "^3.50.0",
+    "styled-components": "^6.1.11",
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {

@@ -13,3 +13,6 @@ export * from "./ArrowUp";
 export * from "./Clock";
 export * from "./SaveEnergy";
 export * from "./Plan";
+export * from "./Hydro";
+export * from "./Solar";
+export * from "./Wind";

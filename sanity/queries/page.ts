@@ -12,6 +12,12 @@ export async function getHomePage() {
 			link,
 			title
 		},
+		'solutions':pageBuilder[][_type == "solutions"][0]{
+			heading,
+			tagline,
+			cta,
+			solutions
+		}
 
 	}`;
 

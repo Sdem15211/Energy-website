@@ -21,6 +21,22 @@ const pageType = defineType({
           type: "hero",
         }),
         defineArrayMember({
+          name: "solutions",
+          type: "solutions",
+        }),
+        defineArrayMember({
+          name: "aboutUs",
+          type: "aboutUs",
+        }),
+        defineArrayMember({
+          name: "metrics",
+          type: "metrics",
+        }),
+        defineArrayMember({
+          name: "ourExperts",
+          type: "ourExperts",
+        }),
+        defineArrayMember({
           name: "textWithIllustration",
           type: "textWithIllustration",
         }),

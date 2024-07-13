@@ -9,6 +9,10 @@ import textWithIllustrationType from "./schemaTypes/textWithIllu";
 import imageGalleryType from "./schemaTypes/imageGallery";
 import { heroType } from "./schemaTypes/hero";
 import { promotionType } from "./schemaTypes/promotion";
+import { aboutUsType } from "./schemaTypes/aboutUs";
+import { metricsType } from "./schemaTypes/Metrics";
+import { ourExpertsType } from "./schemaTypes/OurExperts";
+import { solutionsType } from "./schemaTypes/Solutions";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -21,5 +25,9 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     imageGalleryType,
     heroType,
     promotionType,
+    aboutUsType,
+    metricsType,
+    ourExpertsType,
+    solutionsType,
   ],
 };

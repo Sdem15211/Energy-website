@@ -24,12 +24,12 @@ const PricingPage = () => {
           <div
             className={cx(
               "px-8 col-span-2 shadow-xl md:col-span-1  relative overflow-hidden pb-8 pt-14 rounded-3xl",
-              recommended === true
+              recommended === false
                 ? "border-none bg-secondary-950 text-white"
                 : "border-t-4 border-primary-300"
             )}
           >
-            {recommended === true && (
+            {recommended === false && (
               <p className="absolute top-0 bg-primary-300 text-black text-center py-2 w-full right-0">
                 Recommended
               </p>
@@ -69,12 +69,12 @@ const PricingPage = () => {
           <div
             className={cx(
               "px-8 col-span-2 shadow-xl md:col-span-1  relative overflow-hidden pb-8 pt-14 rounded-3xl",
-              recommended === false
+              recommended === true
                 ? "border-none bg-secondary-950 text-white"
                 : "border-t-4 border-primary-300"
             )}
           >
-            {recommended === false && (
+            {recommended === true && (
               <p className="absolute top-0 bg-primary-300 text-black text-center py-2 w-full right-0">
                 Recommended
               </p>
@@ -114,12 +114,12 @@ const PricingPage = () => {
           <div
             className={cx(
               "px-8 col-span-2 shadow-xl md:col-span-1  relative overflow-hidden pb-8 pt-14 rounded-3xl",
-              recommended === true
+              recommended === false
                 ? "border-none bg-secondary-950 text-white"
                 : "border-t-4 border-primary-300"
             )}
           >
-            {recommended === true && (
+            {recommended === false && (
               <p className="absolute top-0 bg-primary-300 text-black text-center py-2 w-full right-0">
                 Recommended
               </p>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-function AboutUsCarousel() {
+function AboutUsCarousel({ images }: { images: { url: string }[] }) {
   return (
     <Carousel
       swipeable
@@ -19,33 +19,19 @@ function AboutUsCarousel() {
       centerSlidePercentage={90}
       className="h-full cursor-grabbing"
     >
-      <div className="w-full">
-        <Image
-          src="/Images/hero1.png"
-          alt="About Us Image"
-          width={420}
-          className="w-full h-full object-cover"
-          height={530}
-        />
-      </div>
-      <div className="w-full">
-        <Image
-          src="/Images/hero1.png"
-          alt="About Us Image"
-          width={420}
-          className="w-full h-full object-cover"
-          height={530}
-        />
-      </div>
-      <div className="w-full">
-        <Image
-          src="/Images/hero1.png"
-          alt="About Us Image"
-          width={420}
-          className="w-full h-full object-cover"
-          height={530}
-        />
-      </div>
+      {images.map((item: any, index: number) => {
+        return (
+          <div key={index} className="w-full">
+            <Image
+              src={item.url}
+              alt="About Us Image"
+              width={420}
+              className="w-full h-full object-cover"
+              height={530}
+            />
+          </div>
+        );
+      })}
     </Carousel>
   );
 }

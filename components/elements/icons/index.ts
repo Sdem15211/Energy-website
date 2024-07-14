@@ -16,3 +16,5 @@ export * from "./Plan";
 export * from "./Hydro";
 export * from "./Solar";
 export * from "./Wind";
+export * from "./Plant";
+export * from "./People";

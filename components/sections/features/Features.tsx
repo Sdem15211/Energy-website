@@ -30,7 +30,7 @@ export const Features = async () => {
                     <p className="text-neutral-800">{item.excerpt}</p>
                   </div>
                   <button className="text-primary-950">
-                    <Link href="/about-us">Read More</Link>
+                    <Link href="/pricing">Read More</Link>
                   </button>
                 </div>
               );

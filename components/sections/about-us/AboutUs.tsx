@@ -1,46 +1,39 @@
 import { Check, Container, Heading, Section, SubTitle } from "@/components";
 import React from "react";
 import AboutUsCarousel from "./AboutUsCarousel";
+import { getHomePage } from "@/sanity/queries/page";
+import DynamicIcon from "@/components/elements/icons/IconComponent";
 
-export const AboutUs = () => {
+export const AboutUs = async () => {
+  const data = await getHomePage();
+  const { aboutUs } = data;
+
   return (
     <Section className="bg-secondary-950">
       <Container>
-        <SubTitle subTitle="About us" />
+        <SubTitle subTitle={aboutUs.tagline} />
         <div className="grid xl:grid-cols-2 gap-12 md:gap-36">
           <div className="flex flex-col gap-6">
             <Heading as="h2" className="text-section leading-none text-white">
-              Committed to a sustainable future
+              {aboutUs.heading}
             </Heading>
-            <p className="text-white/80">
-              As a pioneering force in the green energy sector, we've been at
-              the forefront of the transition to clean, renewable power sources.
-              Our mission is simple yet profound: to create a world where energy
-              is not only abundant but also environmentally responsible. We
-              believe that by harnessing the power of nature, we can power the
-              world and protect it simultaneously.
-            </p>
+            <p className="text-white/80">{aboutUs.excerpt}</p>
             <ul className="mt-4 grid grid-cols-2 xl:grid-cols-1 gap-4">
-              <li className="flex items-center gap-3 text-white">
-                <Check />
-                Check item
-              </li>
-              <li className="flex items-center gap-3 text-white">
-                <Check />
-                Check item
-              </li>
-              <li className="flex items-center gap-3 text-white">
-                <Check />
-                Check item
-              </li>
-              <li className="flex items-center gap-3 text-white">
-                <Check />
-                Check item
-              </li>
+              {aboutUs.solutions.map((solution: any, index: number) => {
+                return (
+                  <li
+                    key={index}
+                    className="flex items-center gap-3 text-white"
+                  >
+                    <DynamicIcon name={solution.icon} />
+                    {solution.heading}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col-span-1">
-            <AboutUsCarousel />
+            <AboutUsCarousel images={aboutUs.slider} />
           </div>
         </div>
       </Container>

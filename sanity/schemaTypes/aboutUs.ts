@@ -30,16 +30,11 @@ export const aboutUsType = defineType({
       type: "image",
     }),
     defineField({
-      name: "aboutUsImageLeft",
-      type: "image",
-    }),
-
-    defineField({
       name: "solutions",
       type: "array",
       of: [
         defineField({
-          name: "Aboutus",
+          name: "solutions",
           type: "textWithIllustration",
         }),
       ],

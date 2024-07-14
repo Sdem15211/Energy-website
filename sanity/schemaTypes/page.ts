@@ -48,6 +48,10 @@ const pageType = defineType({
           name: "promotion",
           type: "promotion",
         }),
+        defineArrayMember({
+          name: "ourPhilosophy",
+          type: "ourPhilosophy",
+        }),
       ],
     }),
   ],

@@ -45,7 +45,7 @@ export const Header = () => {
           >
             {headerData.header.map((item, index) => {
               return (
-                <li key={index}>
+                <li key={index} onClick={toggleMenu}>
                   <Link href={item.href}>{item.label}</Link>
                 </li>
               );

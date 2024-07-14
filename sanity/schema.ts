@@ -13,6 +13,7 @@ import { aboutUsType } from "./schemaTypes/aboutUs";
 import { metricsType } from "./schemaTypes/Metrics";
 import { ourExpertsType } from "./schemaTypes/OurExperts";
 import { solutionsType } from "./schemaTypes/Solutions";
+import { ourPhilosophy } from "./schemaTypes/ourPhilosophy";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -29,5 +30,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     metricsType,
     ourExpertsType,
     solutionsType,
+    ourPhilosophy,
   ],
 };

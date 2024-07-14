@@ -50,3 +50,26 @@ export async function getHomePage() {
     revalidate: new Date().getSeconds(),
   });
 }
+
+export async function getAboutPage() {
+  const getPageQuery = groq`*[_type == "page"][slug == 'about-us'][0]{
+		slug,
+		'hero':pageBuilder[][_type == "hero"][0]{
+			heading,
+			tagline
+		},
+		'promotion':pageBuilder[][_type == "promotion"][0]{
+			link,
+			title
+		},
+    'ourPhilosophy': pageBuilder[][_type == 'ourPhilosophy'][0]{
+      heading,
+      cta,
+      philosophys[]{
+        headline,
+        tagline,
+        excerpt
+      }
+    },
+  }`;
+}

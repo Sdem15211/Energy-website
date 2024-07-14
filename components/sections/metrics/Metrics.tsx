@@ -47,7 +47,10 @@ export const Metrics = async () => {
                 .filter((item: any) => !item.excerpt)
                 .map((item: any, index: number) => {
                   return (
-                    <div className="h-full flex gap-6 p-8 bg-primary-300 rounded-3xl">
+                    <div
+                      key={index}
+                      className="h-full flex gap-6 p-8 bg-primary-300 rounded-3xl"
+                    >
                       <DynamicIcon name={item.icon} />
                       <div className="flex flex-col gap-4">
                         <h3 className="text-title leading-none tracking-tight text-secondary-950">

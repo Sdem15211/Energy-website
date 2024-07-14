@@ -23,7 +23,10 @@ export const Experts = async () => {
         <div className="mt-20">
           {ourExperts.ourExperts.map((item: any, index: number) => {
             return (
-              <div className="border-b py-8 flex gap-12 items-center border-neutral-700">
+              <div
+                key={index}
+                className="border-b py-8 flex gap-12 items-center border-neutral-700"
+              >
                 <div className="relative w-[90px] h-[90px] shrink-0">
                   <Image
                     src={item.image}

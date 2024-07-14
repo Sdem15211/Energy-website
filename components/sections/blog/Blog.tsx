@@ -35,10 +35,10 @@ export const Blog = () => {
                   </h3>
                   <p className="text-neutral-400 line-clamp-2 ">
                     Solar energy is revolutionizing the way we power our world.
-                    In this blog post, we'll delve into the incredible potential
-                    of solar technology, its environmental benefits, and how you
-                    can tap into this sustainable energy source for a brighter
-                    future.
+                    In this blog post, we&apos;ll delve into the incredible
+                    potential of solar technology, its environmental benefits,
+                    and how you can tap into this sustainable energy source for
+                    a brighter future.
                   </p>
                 </div>
                 <div className="flex items-center mt-6 gap-6 justify-between">
@@ -74,10 +74,10 @@ export const Blog = () => {
                   </h3>
                   <p className="text-neutral-400 line-clamp-2 ">
                     Solar energy is revolutionizing the way we power our world.
-                    In this blog post, we'll delve into the incredible potential
-                    of solar technology, its environmental benefits, and how you
-                    can tap into this sustainable energy source for a brighter
-                    future.
+                    In this blog post, we&apos;ll delve into the incredible
+                    potential of solar technology, its environmental benefits,
+                    and how you can tap into this sustainable energy source for
+                    a brighter future.
                   </p>
                 </div>
                 <div className="flex items-center mt-6 gap-6 justify-between">
@@ -113,10 +113,10 @@ export const Blog = () => {
                   </h3>
                   <p className="text-neutral-400 line-clamp-2 ">
                     Solar energy is revolutionizing the way we power our world.
-                    In this blog post, we'll delve into the incredible potential
-                    of solar technology, its environmental benefits, and how you
-                    can tap into this sustainable energy source for a brighter
-                    future.
+                    In this blog post, we&apos;ll delve into the incredible
+                    potential of solar technology, its environmental benefits,
+                    and how you can tap into this sustainable energy source for
+                    a brighter future.
                   </p>
                 </div>
                 <div className="flex items-center mt-6 gap-6 justify-between">
@@ -152,10 +152,10 @@ export const Blog = () => {
                   </h3>
                   <p className="text-neutral-400 line-clamp-2 ">
                     Solar energy is revolutionizing the way we power our world.
-                    In this blog post, we'll delve into the incredible potential
-                    of solar technology, its environmental benefits, and how you
-                    can tap into this sustainable energy source for a brighter
-                    future.
+                    In this blog post, we&apos;ll delve into the incredible
+                    potential of solar technology, its environmental benefits,
+                    and how you can tap into this sustainable energy source for
+                    a brighter future.
                   </p>
                 </div>
                 <div className="flex items-center mt-6 gap-6 justify-between">

@@ -21,11 +21,11 @@ const AboutPage = () => {
             </Heading>
             <div>
               <p className="mb-4">
-                At Flow, we're committed to a sustainable future. As a
-                pioneering force in the green energy sector, we've been at the
-                forefront of the transition to clean, renewable power sources.
-                Our mission is simple yet profound: to create a world where
-                energy is not only abundant but also environmentally
+                At Flow, we&apos;re committed to a sustainable future. As a
+                pioneering force in the green energy sector, we&apos;ve been at
+                the forefront of the transition to clean, renewable power
+                sources. Our mission is simple yet profound: to create a world
+                where energy is not only abundant but also environmentally
                 responsible. We believe that by harnessing the power of nature,
                 we can power the world and protect it simultaneously.
               </p>

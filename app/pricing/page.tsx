@@ -51,7 +51,7 @@ const PricingPage = () => {
             </Button>
             <div>
               <Heading as="h4" className="my-4">
-                What's included?
+                What&apos;s included?
               </Heading>
               <ul className="grid gap-2">
                 <li className="flex gap-2 items-center text-sm">
@@ -96,7 +96,7 @@ const PricingPage = () => {
             </Button>
             <div>
               <Heading as="h4" className="my-4">
-                What's included?
+                What&apos;s included?
               </Heading>
               <ul className="grid gap-2">
                 <li className="flex gap-2 items-center text-sm">
@@ -141,7 +141,7 @@ const PricingPage = () => {
             </Button>
             <div>
               <Heading as="h4" className="my-4">
-                What's included?
+                What&apos;s included?
               </Heading>
               <ul className="grid gap-2">
                 <li className="flex gap-2 items-center text-sm">

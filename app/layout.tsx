@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "@/components";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const figtree = Figtree({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={figtree.className}>
         <Header />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>

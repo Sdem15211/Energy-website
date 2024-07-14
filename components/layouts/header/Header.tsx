@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import cx from "classnames";
 import { useWindScreenowSize } from "@/hooks/useWindowSize";
 import useDetectScroll from "@smakss/react-scroll-direction";
-import headerData from "@/data/Header.json";
+import headerData from "@/data/header.json";
 import { usePathname } from "next/navigation";
 
 export const Header = () => {

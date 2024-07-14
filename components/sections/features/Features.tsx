@@ -18,10 +18,13 @@ export const Features = async () => {
               {solutions.heading}
             </Heading>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 xl:grid-cols-4">
+          <div className="grid md:grid-cols-2 gap-14 xl:grid-cols-4">
             {solutions.solutions.map((item: any, index: number) => {
               return (
-                <div key={index} className="flex flex-col gap-6 items-start">
+                <div
+                  key={index}
+                  className="flex flex-col gap-6 items-start border-b-[1px] border-neutral-200 last:border-none sm:border-none"
+                >
                   <DynamicIcon name={item.icon} />
                   <div>
                     <Heading as="h3" className="text-title leading-none mb-4">
@@ -29,7 +32,7 @@ export const Features = async () => {
                     </Heading>
                     <p className="text-neutral-800">{item.excerpt}</p>
                   </div>
-                  <button className="text-primary-950">
+                  <button className="text-primary-950 mb-4">
                     <Link href="/pricing">Read More</Link>
                   </button>
                 </div>
